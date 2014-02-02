@@ -1,0 +1,52 @@
+@import 'commons';
+
+body {
+  @include default-font-normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include default-font-bold;
+  color: #444;
+}
+
+h1 {
+  padding:0;
+  margin:0;
+  line-height: 35px;
+}
+
+.header {
+  padding:15px 0 18px 0;
+  @include background-image(linear-gradient(#6EB7E7, #1E7A9E));
+
+  h1.logo {
+    font-size: 35px;
+    color: #fff;
+    @include default-font-normal;
+  }
+}
+
+.slide {
+
+  @include make-md-column(6.2);
+  margin: 50px 0;
+
+  h2 {
+    margin-bottom: 12px;
+    line-height: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 32px;  
+  }
+
+  &.slide-left {
+    float: left;
+  }
+
+  &.slide-right {
+    float: right;
+  }    
+}
+
