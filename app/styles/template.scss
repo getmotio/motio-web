@@ -2,6 +2,7 @@
 
 body {
   @include default-font-normal;
+  padding-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,38 +16,55 @@ h1 {
   line-height: 35px;
 }
 
-.header {
+.navbar-default {
   padding:15px 0 18px 0;
+  border:0;
   @include background-image(linear-gradient(#6EB7E7, #1E7A9E));
 
-  h1.logo {
+  a.navbar-brand {
     font-size: 35px;
     color: #fff;
+
     @include default-font-normal;
   }
 }
 
-.slide {
+.slide-wrapper {
+  
+  padding: 50px 0;
+  background: url(http://cdn.funcheap.com/wp-content/uploads/2013/03/holi-celebration-band-celebration-holi-india-culture.jpg) no-repeat center center fixed;
+  background-size: cover;
 
-  @include make-md-column(6.2);
-  margin: 50px 0;
+  .slide-left, .slide-right {
+    @include container-fixed();
 
-  h2 {
-    margin-bottom: 12px;
-    line-height: 40px;
+    h2, p {
+      @include make-sm-column(6.2);
+      color: #fff;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      line-height: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 32px;  
+    }
+
   }
 
-  p {
-    font-size: 18px;
-    line-height: 32px;  
+  .slide-left {
+    h2, p {
+      float:left;
+    }
   }
 
-  &.slide-left {
-    float: left;
+  .slide-right {
+    h2, p {
+      float: right;
+    }
   }
 
-  &.slide-right {
-    float: right;
-  }    
 }
-
