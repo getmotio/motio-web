@@ -2,7 +2,7 @@
 
 body {
   @include default-font-normal;
-  padding-top: 70px;
+  padding-top: 83px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,6 +17,7 @@ h1 {
 }
 
 .navbar-default {
+  z-index: 1000;
   padding:15px 0 18px 0;
   border:0;
   @include background-image(linear-gradient(#6EB7E7, #1E7A9E));
@@ -30,10 +31,8 @@ h1 {
 }
 
 .slide-wrapper {
-  
-  padding: 50px 0;
-  background: url(http://cdn.funcheap.com/wp-content/uploads/2013/03/holi-celebration-band-celebration-holi-india-culture.jpg) no-repeat center center fixed;
-  background-size: cover;
+  position: relative;
+  padding: 120px 0;
 
   .slide-left, .slide-right {
     @include container-fixed();
@@ -65,6 +64,28 @@ h1 {
     h2, p {
       float: right;
     }
+  }
+
+  &.wrapper-1 {
+    background: url(http://cdn.funcheap.com/wp-content/uploads/2013/03/holi-celebration-band-celebration-holi-india-culture.jpg) center center no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
+
+  &.wrapper-2 {
+    @include background-image(linear-gradient(#f7f7f7, #fff));
+    .slide-left, .slide-right {
+      h2, p {
+        color: #444 !important;
+      }
+    }
+    z-index: 20;
+  }
+
+  &.wrapper-3 {
+    background: url(http://cdn.funcheap.com/wp-content/uploads/2013/03/holi-celebration-band-celebration-holi-india-culture.jpg) center center no-repeat;
+    background-size: cover;
+    z-index: 30;
   }
 
 }

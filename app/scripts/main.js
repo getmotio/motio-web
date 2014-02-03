@@ -1,1 +1,5 @@
-console.log('\'Allo \'Allo!');
+$(function () {
+
+  var s = skrollr.init({smoothScrolling: false});
+
+});
