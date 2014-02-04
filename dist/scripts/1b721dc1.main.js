@@ -1,0 +1,1 @@
+$(function(){skrollr.init({smoothScrolling:!1})});
