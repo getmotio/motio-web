@@ -25,6 +25,7 @@ p {
   a.navbar-brand {
     font-size: 35px;
     color: #fff;
+    padding:0;
     @include default-font-normal;
   }
 
@@ -66,6 +67,7 @@ p {
 .footer {
   background-color: rgba(#000, 0.8);
   margin-top: 40px;
+  background: rgba(219,82,0,0.89);
   height: 250px; //Demo!
 }
 
