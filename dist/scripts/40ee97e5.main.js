@@ -1,1 +1,0 @@
-var adjustSlides=function(){var a=$(window).outerHeight(),b=$(".navbar-motio").outerHeight(),c=a-b,d=$(".slide-wrapper");d.height(c),d.children(".slide-image").height(c),d.children(".slide-content").height(c)};$(function(){adjustSlides();skrollr.init({smoothScrolling:!1})});
