@@ -13,12 +13,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
 }
 
-p {
+p, pre {
+  padding:0;
+  margin:0;
+  @include default-font-normal;
+  background-color: transparent;
+  border:0;
+  word-break: break-word;
+  color:#fff;
   font-size: 18px;
   line-height: 25px;
 }
 
 a.btn-link {
+  display: inline-block;
   background: $orange;
   color: #fff;
   padding: 10px 15px;
@@ -71,7 +79,14 @@ a.btn-link {
     h2 {
       margin: 5px 0 8px 0;
     }
+  }
 
+  &.explanation-1 {
+    .explanation-container {
+      a.btn-link {
+        margin-top:30px;
+      }
+    }
   }
 
   &.explanation-1 {
