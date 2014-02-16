@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
 $font-stack: 'Raleway', sans-serif;
 
 @mixin default-font-normal {
   font-family: $font-stack;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 @mixin default-font-bold {

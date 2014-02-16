@@ -1,1 +1,0 @@
-!function(){"use strict";var a=function(){var a,b,c,d=$(".explanations");$.each(d,function(d,e){e=$(e),a=e.find(".illustration-container"),b=e.find(".explanation-container"),c=b.height(),a.height(.94*c),a.css("margin-top",.03*c)})};$(function(){a()})}();
