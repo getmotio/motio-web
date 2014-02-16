@@ -1,15 +1,16 @@
 @import 'commons';
 
+$orange: #f57e37;
+
 body {
   @include default-font-normal;
-  padding-top: 85px;
-  background: url(http://m1.behance.net/rendition/modules/82079459/hd/fc2571953e594c3bd451e33a7959cbb7.jpg) no-repeat center center fixed;
+  background: url(/images/background.jpg) no-repeat center center fixed;
   @include background-size(cover);
 }
 
 h1, h2, h3, h4, h5, h6 {
   @include default-font-bold;
-  color: #444;
+  color: #fff !important;
 }
 
 p {
@@ -17,36 +18,68 @@ p {
   line-height: 25px;
 }
 
+a.btn-link {
+  background: $orange;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-transform: none;
+
+  &:hover {
+    background: $orange !important;
+    color: #fff !important;
+  }
+}
+
 .navbar-default {
   padding: 15px 0 20px 0; 
   border:0;
-  background-color: rgba(#000, 0.75);
+  background: #000;
+  background: rgba(0,0,0,0);
 
   a.navbar-brand {
     font-size: 35px;
     color: #fff;
+    padding:0;
+
     @include default-font-normal;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
 }
 
 .explanations {
-  margin-top:20px;
+  margin-top:30px;
 
   .illustration-container {
     @include make-md-column(5);
-    padding: 3% 3%;
+
+    img {
+      padding: 0 5px;
+    }
+
   }
 
   .explanation-container {
     @include make-md-column(7);
+    color: #fff;
     padding: 3% 3%;
-    background-color: rgba(#fff, 0.98);
 
     h2 {
       margin: 5px 0 8px 0;
     }
+
   }
 
+}
+
+.footer {
+  background-color: rgba(#000, 0.8);
+  margin-top: 40px;
+  background: rgba(219,82,0,0.89);
+  height: 250px; //Demo!
 }
 
