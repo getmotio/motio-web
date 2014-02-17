@@ -31,10 +31,12 @@ a.btn-link {
   color: #fff;
   padding: 10px 15px;
   font-size: 18px;
+  text-decoration: none !important;
   @include default-font-bold;
+  @include transition(background 0.5s linear);
 
   &:hover {
-    background: $orange !important;
+    background: darken($orange, 12%) !important;
     color: #fff !important;
   }
 }
