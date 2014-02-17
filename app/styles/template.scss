@@ -13,6 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
 }
 
+h2 {
+  font-size: 30px;
+
+  @media(max-width: $screen-md-min) {
+    font-size: 22px;
+  }
+}
+
 p, pre {
   padding:0;
   margin:0;
@@ -23,6 +31,11 @@ p, pre {
   color:#fff;
   font-size: 18px;
   line-height: 25px;
+
+  @media(max-width: $screen-md-min) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 a.btn-link {
@@ -85,8 +98,14 @@ a.btn-link {
 
   &.explanation-1 {
     .explanation-container {
+
+      @media (min-width: $screen-md-min) {
+        padding-top: 90px;
+      }
+
       a.btn-link {
-        margin-top:30px;
+        margin-top: 30px;
+        float: right;
       }
     }
   }
@@ -94,6 +113,12 @@ a.btn-link {
   &.explanation-1 {
     .illustration-container {
       text-align: center;
+
+      @media (max-width: $screen-md-min) {
+        img {
+          height: 250px;
+        }
+      }
     }
   }
 
