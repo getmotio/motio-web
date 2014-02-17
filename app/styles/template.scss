@@ -13,20 +13,43 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
 }
 
-p {
+h2 {
+  font-size: 30px;
+
+  @media(max-width: $screen-md-min) {
+    font-size: 22px;
+  }
+}
+
+p, pre {
+  padding:0;
+  margin:0;
+  @include default-font-normal;
+  background-color: transparent;
+  border:0;
+  word-break: break-word;
+  color:#fff;
   font-size: 18px;
   line-height: 25px;
+
+  @media(max-width: $screen-md-min) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 a.btn-link {
+  display: inline-block;
   background: $orange;
   color: #fff;
   padding: 10px 15px;
   font-size: 18px;
-  text-transform: none;
+  text-decoration: none !important;
+  @include default-font-bold;
+  @include transition(background 0.5s linear);
 
   &:hover {
-    background: $orange !important;
+    background: darken($orange, 12%) !important;
     color: #fff !important;
   }
 }
@@ -71,11 +94,32 @@ a.btn-link {
     h2 {
       margin: 5px 0 8px 0;
     }
-
   }
 
   &.explanation-1 {
-    text-align: center;
+    .explanation-container {
+
+      @media (min-width: $screen-md-min) {
+        padding-top: 90px;
+      }
+
+      a.btn-link {
+        margin-top: 30px;
+        float: right;
+      }
+    }
+  }
+
+  &.explanation-1 {
+    .illustration-container {
+      text-align: center;
+
+      @media (max-width: $screen-md-min) {
+        img {
+          height: 250px;
+        }
+      }
+    }
   }
 
 }
