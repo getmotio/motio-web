@@ -31,7 +31,7 @@ a.btn-link {
   color: #fff;
   padding: 10px 15px;
   font-size: 18px;
-  text-transform: none;
+  @include default-font-bold;
 
   &:hover {
     background: $orange !important;
@@ -90,7 +90,9 @@ a.btn-link {
   }
 
   &.explanation-1 {
-    text-align: center;
+    .illustration-container {
+      text-align: center;
+    }
   }
 
 }
