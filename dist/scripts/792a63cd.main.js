@@ -1,0 +1,1 @@
+!function(){"use strict";$(function(){i18n.init({lng:"es-AR"},function(){$(".explanations").i18n()})})}();
