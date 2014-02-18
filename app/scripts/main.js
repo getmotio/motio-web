@@ -2,7 +2,7 @@
   "use strict";
 
   $(function () {
-    i18n.init({lng: 'es-AR'}, function (t) {
+    i18n.init(function (t) {
       $('.explanations').i18n();
     });
   });
