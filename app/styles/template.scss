@@ -54,11 +54,22 @@ a.btn-link {
   }
 }
 
-.navbar-default {
+.navbar-motio {
   padding: 15px 0 20px 0; 
   border:0;
   background: #000;
   background: rgba(0,0,0,0);
+
+  @media (max-width: $screen-md-min) {
+    .navbar-wrapper {
+      text-align: center;
+    }
+
+    .navbar-header {
+      float: none;
+      display: inline-block;
+    }
+  }
 
   a.navbar-brand {
     font-size: 35px;
@@ -75,7 +86,7 @@ a.btn-link {
 }
 
 .explanations {
-  margin-top:30px;
+  padding:30px 0;
 
   .illustration-container {
     @include make-md-column(5);
@@ -98,7 +109,6 @@ a.btn-link {
 
   &.explanation-1 {
     .explanation-container {
-
       @media (min-width: $screen-md-min) {
         padding-top: 90px;
       }
@@ -108,9 +118,7 @@ a.btn-link {
         float: right;
       }
     }
-  }
-
-  &.explanation-1 {
+  
     .illustration-container {
       text-align: center;
 
@@ -122,11 +130,24 @@ a.btn-link {
     }
   }
 
+  &.explanation-2 {
+    background: #f5f5f5;
+    padding: 150px 0;
+
+    h2, p, pre {
+      color: #555 !important;
+    }
+  }
+
+  &.explanation-3 {
+    background: url(/images/store.jpg) no-repeat center center;
+    @include background-size(cover);
+  }
+
 }
 
 .footer {
   background-color: rgba(#000, 0.8);
-  margin-top: 40px;
   background: rgba(219,82,0,0.89);
   height: 250px; //Demo!
 }
