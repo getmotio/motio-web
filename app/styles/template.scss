@@ -38,13 +38,21 @@ p, pre {
   }
 }
 
-a.btn-link {
+form {
+  label {
+    @include default-font-normal;
+    font-size: 16px;
+  }
+}
+
+a.btn-link, button.btn-motio {
   display: inline-block;
   background: $orange;
   color: #fff;
   padding: 10px 15px;
   font-size: 18px;
   text-decoration: none !important;
+  @include border-radius(0);
   @include default-font-bold;
   @include transition(background 0.5s linear);
 
@@ -88,19 +96,13 @@ a.btn-link {
 .explanations {
   padding:30px 0;
 
-  .illustration-container {
-    @include make-md-column(5);
-
-    img {
-      padding: 0 5px;
-    }
-
+  .left-container {
+    @include make-md-column(6);
   }
 
-  .explanation-container {
-    @include make-md-column(7);
+  .right-container {
+    @include make-md-column(6);
     color: #fff;
-    padding: 3% 3%;
 
     h2 {
       margin: 5px 0 8px 0;
@@ -108,7 +110,19 @@ a.btn-link {
   }
 
   &.explanation-1 {
-    .explanation-container {
+    .left-container {
+      @include make-md-column(5);
+      text-align: center;
+
+      @media (max-width: $screen-md-min) {
+        img {
+          height: 250px;
+        }
+      }
+    }
+    
+    .right-container {
+      @include make-md-column(7);
       @media (min-width: $screen-md-min) {
         padding-top: 90px;
       }
@@ -118,21 +132,20 @@ a.btn-link {
         float: right;
       }
     }
-  
-    .illustration-container {
-      text-align: center;
-
-      @media (max-width: $screen-md-min) {
-        img {
-          height: 250px;
-        }
-      }
-    }
   }
 
   &.explanation-2 {
     background: #f5f5f5;
-    padding: 150px 0;
+    padding: 85px 0; 
+
+    .left-container {
+      @include make-md-column(7);
+    }
+
+    .right-container {
+      @include make-md-column(5);
+      text-align: center;
+    }
 
     h2, p, pre {
       color: #555 !important;
@@ -140,8 +153,38 @@ a.btn-link {
   }
 
   &.explanation-3 {
-    background: url(/images/store.jpg) no-repeat center center;
+    background: url(/images/store.png) no-repeat center center;
     @include background-size(cover);
+    padding: 95px 0 40px 0;
+
+    .left-container {
+      @include make-md-column(6);
+      text-align: left;
+
+      .motio-sensor {
+        float:right;
+        margin-top: 40px;
+        margin-right:20px;
+      }
+
+    }
+
+    .right-container {
+      @include make-md-column(6);
+      text-align: right;
+
+      .iphone {
+        float:left;
+        margin-left:20px;
+      }
+
+      .iphone-description {
+        position: relative;
+        top: -45px;
+      }
+
+    }
+
   }
 
 }
