@@ -8,3 +8,5 @@
   });
 
 }();
+
+var Motio = angular.module('Motio', ['ngResource']);
