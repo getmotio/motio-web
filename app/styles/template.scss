@@ -10,7 +10,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   @include default-font-bold;
-  color: #fff !important;
 }
 
 h2 {
@@ -157,6 +156,10 @@ a.btn-link, button.btn-motio {
     @include background-size(cover);
     padding: 95px 0 40px 0;
 
+    h2, pre, p {
+      color: #fff;
+    }
+
     .left-container {
       @include make-md-column(6);
       text-align: left;
@@ -164,7 +167,7 @@ a.btn-link, button.btn-motio {
       .motio-sensor {
         float:right;
         margin-top: 40px;
-        margin-right:20px;
+        margin-right:135px;
       }
 
     }
@@ -182,9 +185,15 @@ a.btn-link, button.btn-motio {
         position: relative;
         top: -45px;
       }
-
     }
+  }
 
+  &.explanation-4 {
+    background: #f5f5f5;
+
+    .right-container {
+      color: #555;
+    }
   }
 
 }
