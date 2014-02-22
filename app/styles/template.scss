@@ -4,6 +4,9 @@ $orange: #f57e37;
 
 body {
   @include default-font-normal;
+}
+
+.full-wrapper {
   background: url(/images/background.jpg) no-repeat center center fixed;
   @include background-size(cover);
 }
