@@ -1,5 +1,5 @@
-!function () {
-  "use strict";
+(function () {
+  'use strict';
 
   $(function () {
     i18n.init(function (t) {
@@ -7,6 +7,6 @@
     });
   });
 
-}();
+}());
 
 var Motio = angular.module('Motio', ['ngResource']);
