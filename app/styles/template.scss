@@ -226,6 +226,11 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
       }
     }
 
+    .message-sent {
+      @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+      text-align: center;
+    }
+
     form {
       .send-help-block, .ready-help-block {
         font-size: 10px;
