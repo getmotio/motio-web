@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "gzippo": "~0.2.0",
-    "express": "~3.4.8"
+    "express": "~3.4.8",
+    "mandrill-api": "^1.0.39"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

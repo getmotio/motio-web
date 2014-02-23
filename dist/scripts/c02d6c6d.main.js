@@ -1,0 +1,1 @@
+!function(){"use strict";$(function(){i18n.init(function(){$(".explanations").i18n()})})}();var Motio=angular.module("Motio",["ngResource"]);Motio.controller("FormController",["$scope","$resource",function(a,b){var c=b("/contact");a.contact={},a.send=function(){new c(a.contact).$save()}}]);

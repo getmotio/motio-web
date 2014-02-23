@@ -1,1 +1,0 @@
-!function(){"use strict";$(function(){i18n.init(function(){$(".explanations").i18n()})})}();

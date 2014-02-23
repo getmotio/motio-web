@@ -69,7 +69,7 @@ form {
   }
 }
 
-a.btn-link, button.btn-motio {
+a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:focus, button.btn-motio {
   display: inline-block;
   background: $orange;
   color: #fff;
@@ -79,6 +79,7 @@ a.btn-link, button.btn-motio {
   @include border-radius(0);
   @include default-font-bold;
   @include transition(background 0.5s linear);
+  @include box-shadow(#fff 0px 0px 0px !important);
 
   &:hover {
     background: darken($orange, 12%) !important;
@@ -222,6 +223,14 @@ a.btn-link, button.btn-motio {
 
       h2 {
         margin: 5px 0 20px 0;
+      }
+    }
+
+    form {
+      .send-help-block {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 36px 5px 0 0;
       }
     }
   }
