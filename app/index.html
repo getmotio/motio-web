@@ -22,7 +22,7 @@
 
     </head>
     <body>
-        <div class="full-wrapper">
+        <div class="full-wrapper" ng-app="Motio">
             <nav class="navbar navbar-default navbar-top navbar-motio" role="navigation">
                 <div class="container navbar-wrapper">
                     <div class="navbar-header">
@@ -85,30 +85,39 @@
                 </div>
             </div>
 
-            <div class="explanations explanation-4">
+            <div class="explanations explanation-4" ng-controller="FormController">
                 <div class="container">
                     <div class="left-container">
+                    {{message}}
                     </div>
                     <div class="right-container">
                         <h2>Contact us | Request a demo</h2>
-                        <form role="form">
-                            <div class="form-group">
-                                <label for="name">Fullname</label>
-                                <input class="form-control" type="text">
+                        <div class="alert message-sent" ng-show="sent">
+                            Your message was sent successfuly! We will get back to you soon.
+                        </div>
+                        <form role="form" ng-submit="send()" name="contactForm" novalidate>
+                            <div class="form-group" ng-class="{'has-error': contactForm.name.$dirty && contactForm.name.$invalid}">
+                                <label for="name" class="control-label required">Fullname</label>
+                                <span class="help-block pull-right" ng-show="contactForm.name.$dirty && contactForm.name.$invalid">Required field</span>
+                                <input class="form-control" ng-model="contact.name" type="text" name="name" required>
+                            </div>
+                            <div class="form-group" ng-class="{'has-error': contactForm.email.$dirty && contactForm.email.$invalid}">
+                                <label for="email" class="control-label required">Email</label>
+                                <span class="help-block pull-right" ng-show="contactForm.email.$dirty && contactForm.email.$invalid">Invalid Email</span>
+                                <input class="form-control" ng-model="contact.email" type="email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="name">Email</label>
-                                <input class="form-control" type="email">
+                                <label for="company">Company</label>
+                                <input class="form-control" ng-model="contact.company" type="text" name="company">
                             </div>
-                            <div class="form-group">
-                                <label for="name">Company</label>
-                                <input class="form-control" type="text">
+                            <div class="form-group" ng-class="{'has-error': contactForm.comments.$dirty && contactForm.comments.$invalid}">
+                                <label for="comments" class="control-label required">Tell us about your idea</label>
+                                <span class="help-block pull-right" ng-show="contactForm.comments.$dirty && contactForm.comments.$invalid">Required field</span>
+                                <textarea rows="5" class="form-control" ng-model="contact.comments" name="comments" required></textarea>
                             </div>
-                            <div class="form-group">
-                                <label for="name">Tell us about your idea</label>
-                                <textarea rows="5" class="form-control"></textarea>
-                            </div>
-                            <button class="btn btn-motio pull-right">Send</button>
+                            <button type="submit" class="btn btn-motio pull-right" ng-disabled="!contactForm.$valid">Send</button>
+                            <span class="help-block pull-right send-help-block" ng-if="!contactForm.$valid">(fill the form above to enable the send button)</span>
+                            <span class="help-block pull-right ready-help-block" ng-if="contactForm.$valid">ready to be sent! -></span>
                         </form>
                     </div>
                 </div>
@@ -126,6 +135,9 @@
         <script src="bower_components/jquery/jquery.js"></script>
         <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
         <script src="bower_components/i18next/i18next.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/lodash/dist/lodash.compat.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -155,7 +167,8 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/form.js"></script>
         <!-- endbuild -->
 </body>
 </html>

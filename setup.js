@@ -3,8 +3,7 @@ var express = require('express')
 
 exports.app = function () {
   var app = express();
-
   app.use(gzippo.staticGzip(__dirname + '/dist'));
-
+  app.use(express.bodyParser());
   return app;
 };
