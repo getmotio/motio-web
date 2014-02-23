@@ -113,7 +113,8 @@
                                 <textarea rows="5" class="form-control" ng-model="contact.comments" name="comments" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-motio pull-right" ng-disabled="!contactForm.$valid">Send</button>
-                            <span class="help-block pull-right send-help-block" ng-show="!contactForm.$valid">(fill the form above to enable the send button)</span>
+                            <span class="help-block pull-right send-help-block" ng-if="!contactForm.$valid">(fill the form above to enable the send button)</span>
+                            <span class="help-block pull-right ready-help-block" ng-if="contactForm.$valid">ready to be sent! -></span>
                         </form>
                     </div>
                 </div>

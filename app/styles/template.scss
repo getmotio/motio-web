@@ -227,10 +227,14 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
     }
 
     form {
-      .send-help-block {
+      .send-help-block, .ready-help-block {
         font-size: 10px;
         line-height: 10px;
         padding: 36px 5px 0 0;
+      }
+
+      .ready-help-block {
+        color: #00A800;
       }
     }
   }
