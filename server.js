@@ -19,9 +19,9 @@ app.post('/contact', function (req, res) {
 
     var message = {
       text: txtMsg,
-      auto_html: true,
+      subject: "Web Contact | Motio",
       from_email: "web-contact@getmotio.com",
-      from_name: "Web Contact | Motio",
+      from_name: "Web contact",
       to: [{
         email: "hello@getmotio.com"
       }]
