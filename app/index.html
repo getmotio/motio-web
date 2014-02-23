@@ -35,7 +35,7 @@
                 </div>
             </nav>
 
-            <div class="explanations explanation-1">
+            <div class="explanations explanation-1" ng-controller="Explanation1Controller">
                 <div class="container">
                     <div class="left-container">
                         <img src="/images/phones.png" alt="Phones" />
@@ -45,7 +45,7 @@
                         <pre data-i18n="explanations.explanation-1.description">
                             Install motio sensors in your retail store to start giving personalized notifications, recommendations and benefits based on micro-location.
                         </pre>
-                        <a href="#" class="btn-link" data-i18n="explanations.explanation-1.request-demo">Request a demo right now!</a>
+                        <a href="#" class="btn-link" data-i18n="explanations.explanation-1.request-demo" ng-click="requestDemo()">Request a demo right now!</a>
                     </div>
                 </div>
             </div>
@@ -139,6 +139,7 @@
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+        <script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -170,6 +171,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script type="text/javascript" src="scripts/main.js"></script>
         <script type="text/javascript" src="scripts/form.js"></script>
+        <script type="text/javascript" src="scripts/explanation1.js"></script>
         <!-- endbuild -->
 </body>
 </html>
