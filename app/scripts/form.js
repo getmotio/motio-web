@@ -1,4 +1,5 @@
 Motio.controller('FormController', ['$scope', '$resource', function ($scope, $resource) {
+  'use strict';
 
   var Contact = $resource('/contact');
 
