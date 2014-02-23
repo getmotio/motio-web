@@ -6,7 +6,7 @@ Motio.controller('FormController', ['$scope', '$resource', function ($scope, $re
   $scope.sent = false;
 
   $scope.send = function () {
-    // new Contact($scope.contact).$save(function () {
+    new Contact($scope.contact).$save(function () {
       $scope.contact = {};
       $scope.contactForm.$setPristine();
       $scope.sent = true;
@@ -15,7 +15,7 @@ Motio.controller('FormController', ['$scope', '$resource', function ($scope, $re
           $scope.sent = false;
         });
       }, 2000);
-    // });
+    });
   };
 
 }]);
