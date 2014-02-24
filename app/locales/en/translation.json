@@ -7,7 +7,25 @@
     },
     "explanation-2": {
       "title": "Our solution",
-      "description": "Motio helps retailers leverage the power of mobile to attract and influence consumers while they shop in the store. It integrates brick and mortar and online channels into one, allowing a retail store to deliver discounts, benefits and content relevant to the customers location while touring the store."
+      "description": "Motio helps retailers leverage the power of mobile to attract and influence consumers while they shop in the store.\nIt integrates brick and mortar and online channels into one, allowing a retail store to deliver discounts, benefits and content relevant to the customers location while touring the store."
+    },
+    "explanation-3": {
+      "motio-sensor": "Motio sensor",
+      "motio-sensor-description": "A motio sensor is a wireless device which broadcasts a message that smartphones can capture.",
+      "motio-sdk": "Motio SDK",
+      "motio-sdk-description": "The motio SDK is a library developed for iOS and Android, which traduces captured sensor messages in relevant content."
+    },
+    "explanation-4": {
+      "contact-form-title": "Contact us | Request a demo",
+      "contact-sent-message": "Your message was sent successfuly! We will get back to you soon.",
+      "fullname": "Fullname",
+      "email": "Email",
+      "company": "Company",
+      "comments": "Tell us about your idea",
+      "required-field": "Required field",
+      "invalid-email": "Invalid email",
+      "fill-form-message": "(fill the form above to enable the send button)",
+      "form-ready-message": "ready to be sent! ->"
     }
   }
 }
