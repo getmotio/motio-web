@@ -3,175 +3,168 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Motio | Drive in-store purchases via a digital experience</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Motio | Drive in-store purchases via a digital experience</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
 
-    </head>
-    <body>
-        <div class="full-wrapper" ng-app="Motio">
-            <nav class="navbar navbar-default navbar-top navbar-motio" role="navigation">
-                <div class="container navbar-wrapper">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="/">
-                            <img src="/images/logo.png" alt="logo" />
-                            motio
-                        </a>
-                        <p class="navbar-text">| Drive in-store purchases via a digital experience</p>
-                    </div>
-                </div>
-            </nav>
-
-            <div class="explanations explanation-1" ng-controller="Explanation1Controller">
-                <div class="container">
-                    <div class="left-container">
-                        <img src="/images/phones.png" alt="Phones" />
-                    </div>
-                    <div class="right-container">
-                        <h2 data-i18n="explanations.explanation-1.title">Turn up your business by leveraging the latest location technology</h2>
-                        <pre data-i18n="explanations.explanation-1.description">
-                            Install motio sensors in your retail store to start giving personalized notifications, recommendations and benefits based on micro-location.
-                        </pre>
-                        <a href="#" class="btn-link" data-i18n="explanations.explanation-1.request-demo" ng-click="requestDemo()">Request a demo right now!</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="explanations explanation-2">
-                <div class="container">
-                    <div class="left-container">
-                        <h2>Turn up your business by leveraging the latest location technology</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quidem consectetur voluptates ratione ea cum corporis aperiam numquam sit soluta. Eligendi, perferendis omnis porro voluptate maxime provident cumque! Necessitatibus, commodi?
-                        </p>
-                    </div>
-                    <div class="right-container">
-                        <img src="/images/hangers.png" alt="Hangers and Motio" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="explanations explanation-3">
-                <div class="container">
-                    <div class="left-container">
-                        <h2>Motio sensor</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, porro ab iusto ratione perferendis ut nesciunt.
-                        </p>
-                        <img class="motio-sensor" src="/images/motio-sensor.png" alt="Motio device" />
-                    </div>
-                    <div class="right-container">
-                        <img class="iphone" src="/images/iphone-flat.png" alt="Iphone" />
-                        <div class="clearfix"></div>
-                        <div class="iphone-description">
-                            <h2>Motio SDK</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, explicabo, aliquam sapiente nemo dignissimos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="explanations explanation-4" ng-controller="FormController">
-                <div class="container">
-                    <div class="left-container">
-                    {{message}}
-                    </div>
-                    <div class="right-container">
-                        <h2>Contact us | Request a demo</h2>
-                        <div class="alert message-sent" ng-show="sent">
-                            Your message was sent successfuly! We will get back to you soon.
-                        </div>
-                        <form role="form" ng-submit="send()" name="contactForm" novalidate>
-                            <div class="form-group" ng-class="{'has-error': contactForm.name.$dirty && contactForm.name.$invalid}">
-                                <label for="name" class="control-label required">Fullname</label>
-                                <span class="help-block pull-right" ng-show="contactForm.name.$dirty && contactForm.name.$invalid">Required field</span>
-                                <input class="form-control" ng-model="contact.name" type="text" name="name" required>
-                            </div>
-                            <div class="form-group" ng-class="{'has-error': contactForm.email.$dirty && contactForm.email.$invalid}">
-                                <label for="email" class="control-label required">Email</label>
-                                <span class="help-block pull-right" ng-show="contactForm.email.$dirty && contactForm.email.$invalid">Invalid Email</span>
-                                <input class="form-control" ng-model="contact.email" type="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="company">Company</label>
-                                <input class="form-control" ng-model="contact.company" type="text" name="company">
-                            </div>
-                            <div class="form-group" ng-class="{'has-error': contactForm.comments.$dirty && contactForm.comments.$invalid}">
-                                <label for="comments" class="control-label required">Tell us about your idea</label>
-                                <span class="help-block pull-right" ng-show="contactForm.comments.$dirty && contactForm.comments.$invalid">Required field</span>
-                                <textarea rows="5" class="form-control" ng-model="contact.comments" name="comments" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-motio pull-right" ng-disabled="!contactForm.$valid">Send</button>
-                            <span class="help-block pull-right send-help-block" ng-if="!contactForm.$valid">(fill the form above to enable the send button)</span>
-                            <span class="help-block pull-right ready-help-block" ng-if="contactForm.$valid">ready to be sent! -></span>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer">
-                <div class="container">
-                    
-                </div>
-            </div>
+  </head>
+  <body>
+    <div class="full-wrapper" ng-app="Motio">
+      <nav class="navbar navbar-default navbar-top navbar-motio" role="navigation">
+        <div class="container navbar-wrapper">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              <img src="/images/logo.png" alt="logo" />
+              motio
+            </a>
+            <p class="navbar-text">| Drive in-store purchases via a digital experience</p>
+          </div>
         </div>
+      </nav>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
-        <script src="bower_components/i18next/i18next.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <script src="bower_components/lodash/dist/lodash.compat.js"></script>
-        <script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+      <div class="explanations explanation-1" ng-controller="Explanation1Controller">
+        <div class="container">
+          <div class="left-container">
+            <img src="/images/phones.png" alt="Phones" />
+          </div>
+          <div class="right-container">
+            <h2 data-i18n="explanations.explanation-1.title"></h2>
+            <pre data-i18n="explanations.explanation-1.description"></pre>
+            <a href="#" class="btn-link" data-i18n="explanations.explanation-1.request-demo" ng-click="requestDemo()"></a>
+          </div>
+        </div>
+      </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-47691480-1');ga('send','pageview');
-        </script>
+      <div class="explanations explanation-2">
+        <div class="container">
+          <div class="left-container">
+            <h2 data-i18n="explanations.explanation-2.title"></h2>
+            <pre data-i18n="explanations.explanation-2.description"></pre>
+          </div>
+          <div class="right-container">
+            <img src="/images/hangers.png" alt="Hangers and Motio" />
+          </div>
+        </div>
+      </div>
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
-        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
-        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
-        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/button.js"></script>
-        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
-        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+      <div class="explanations explanation-3">
+        <div class="container">
+          <div class="left-container">
+            <h2 data-i18n="explanations.explanation-3.motio-sensor">Motio sensor</h2>
+            <p data-i18n="explanations.explanation-3.motio-sensor-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, porro ab iusto ratione perferendis ut nesciunt.
+            </p>
+            <img class="motio-sensor" src="/images/motio-sensor.png" alt="Motio device" />
+          </div>
+          <div class="right-container">
+            <img class="iphone" src="/images/iphone-flat.png" alt="Iphone" />
+            <div class="clearfix"></div>
+            <div class="iphone-description">
+              <h2 data-i18n="explanations.explanation-3.motio-sdk">Motio SDK</h2>
+              <p data-i18n="explanations.explanation-3.motio-sdk-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, explicabo, aliquam sapiente nemo dignissimos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script type="text/javascript" src="scripts/main.js"></script>
-        <script type="text/javascript" src="scripts/form.js"></script>
-        <script type="text/javascript" src="scripts/explanation1.js"></script>
-        <!-- endbuild -->
+      <div class="explanations explanation-4" ng-controller="FormController">
+        <div class="container">
+          <div class="left-container">
+          </div>
+          <div class="right-container">
+            <h2 data-i18n="explanations.explanation-4.contact-form-title"></h2>
+            <div class="alert message-sent" ng-show="sent" data-i18n="explanations.explanation-4.contact-sent-message"></div>
+            <form role="form" ng-submit="send()" name="contactForm" novalidate>
+              <div class="form-group" ng-class="{'has-error': contactForm.name.$dirty && contactForm.name.$invalid}">
+                <label for="name" class="control-label required" data-i18n="explanations.explanation-4.fullname">Fullname</label>
+                <span class="help-block pull-right" ng-show="contactForm.name.$dirty && contactForm.name.$invalid" data-i18n="explanations.explanation-4.required-field">Required field</span>
+                <input class="form-control" ng-model="contact.name" type="text" name="name" required>
+              </div>
+              <div class="form-group" ng-class="{'has-error': contactForm.email.$dirty && contactForm.email.$invalid}">
+                <label for="email" class="control-label required" data-i18n="explanations.explanation-4.email">Email</label>
+                <span class="help-block pull-right" ng-show="contactForm.email.$dirty && contactForm.email.$invalid" data-i18n="explanations.explanation-4.invalid-email">Invalid Email</span>
+                <input class="form-control" ng-model="contact.email" type="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="company" data-i18n="explanations.explanation-4.company">Company</label>
+                <input class="form-control" ng-model="contact.company" type="text" name="company">
+              </div>
+              <div class="form-group" ng-class="{'has-error': contactForm.comments.$dirty && contactForm.comments.$invalid}">
+                <label for="comments" class="control-label required" data-i18n="explanations.explanation-4.comments">Tell us about your idea</label>
+                <span class="help-block pull-right" ng-show="contactForm.comments.$dirty && contactForm.comments.$invalid" data-i18n="explanations.explanation-4.required-field">Required field</span>
+                <textarea rows="5" class="form-control" ng-model="contact.comments" name="comments" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-motio pull-right" ng-disabled="!contactForm.$valid" data-i18n="explanations.explanation-4.send">Send</button>
+              <span class="help-block pull-right send-help-block" ng-if="!contactForm.$valid" data-i18n="explanations.explanation-4.fill-form-message">(fill the form above to enable the send button)</span>
+              <span class="help-block pull-right ready-help-block" ng-if="contactForm.$valid" data-i18n="explanations.explanation-4.form-ready-message">ready to be sent! -></span>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/i18next/i18next.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-47691480-1');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+    <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+    <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+    <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+    <script src="bower_components/sass-bootstrap/js/button.js"></script>
+    <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+    <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+    <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/form.js"></script>
+    <script type="text/javascript" src="scripts/explanation1.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

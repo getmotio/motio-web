@@ -4,6 +4,28 @@
       "title": "Potencie su negocio aplicando la última tecnología de localización",
       "description": "Instale los sensores motio, y comience a brindar avisos, recomendaciones y beneficios a los usuarios de sus aplicaciones iOS y Androd mientras recorren su local.",
       "request-demo": "¡Pida una demostración ahora!"
+    },
+    "explanation-2": {
+      "title": "Nuestra solución",
+      "description": "Motio ayuda a retailers a apalancarse en la tecnología móvil para atraer e influir a los clientes mientras compran dentro de sus locales.\nIntegra los canales de venta brick and mortar y online en uno solo, permitiendo a las tiendas ofrecer descuentos, beneficios y contenido relevante mientras estos recorren el lugar."
+    },
+    "explanation-3": {
+      "motio-sensor": "Motio sensor",
+      "motio-sensor-description": "Los sensores motio son dispositivos wireless que emiten un mensaje broadcast el cual puede ser capturado por los teléfonos smartphone.",
+      "motio-sdk": "SDK Motio",
+      "motio-sdk-description": "El SDK Motio es una librería desarrollada para iOS y Android, la cual traduce mensajes capturados en contenido relevante."
+    },
+    "explanation-4": {
+      "contact-form-title": "Contáctanos | Pide una demostración",
+      "contact-sent-message": "Tu mensaje fue enviado con éxito! Nos contactaremos pronto.",
+      "fullname": "Nombre completo",
+      "email": "Correo electrónico",
+      "company": "Companía",
+      "comments": "Cuéntanos sobre tu idea",
+      "required-field": "Campo requerido",
+      "invalid-email": "Email inválido",
+      "fill-form-message": "(complete el formulario para poder enviarlo)",
+      "form-ready-message": "listo para ser enviado! ->"
     }
   }
 }
