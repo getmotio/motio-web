@@ -1,13 +1,12 @@
 {
   "explanations": {
     "explanation-1": {
-      "title": "Turn up your business by leveraging the latest location technology",
-      "description": "Install motio sensors in your retail store to start giving personalized notifications, recommendations and benefits based on micro-location.",
-      "request-demo": "Request a demo right now!"
+      "title": "Motio is the shopping app that helps you discover all the best products at stores near you.",
+      "description": "Welcome to the Motio In-Store experience"
     },
     "explanation-2": {
-      "title": "Our solution",
-      "description": "Motio helps retailers leverage the power of mobile to attract and influence consumers while they shop in the store.\nIt integrates brick and mortar and online channels into one, allowing a retail store to deliver discounts, benefits and content relevant to the customers location while touring the store."
+      "title": "We provide the ultimate shopping experience allowing you to engage with your favorite brands like never before.",
+      "description": "Let Motio be your shopping assistant: It shows you incredible things waiting for you at the store"
     },
     "explanation-3": {
       "motio-sensor": "Motio sensor",
