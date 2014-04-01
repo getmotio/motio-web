@@ -190,6 +190,7 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
     .left-container {
       @include make-md-column(7);
       padding-top: 60px;
+      margin-left: -15px;
     }
     pre{
       padding-top: 40px;
@@ -199,6 +200,7 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
       @include make-md-column(5);
       text-align: center;
     }
+
 
     h2, p, pre {
       color: #555 !important;
