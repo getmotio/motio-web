@@ -175,9 +175,11 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
       padding-top: 30px;
       text-shadow: #f57e37 5px 0px 5px;    
     }
-      .soon{
+     
+    img{
       padding-top: 30px;
     }
+
     }
   }
 
@@ -191,8 +193,7 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
     }
     pre{
       padding-top: 40px;
-      
-    }
+       }
 
     .right-container {
       @include make-md-column(5);
