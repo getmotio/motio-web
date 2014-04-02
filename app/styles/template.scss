@@ -71,7 +71,7 @@ form {
 
 a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:focus, button.btn-motio {
   display: inline-block;
-  background: $orange;
+  background: #2f3d4c;
   color: #fff;
   padding: 10px 15px;
   font-size: 18px;
@@ -241,7 +241,8 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
 
   &.explanation-4 {
     background: #f5f5f5;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     .right-container {
       color: #555;
@@ -249,6 +250,10 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
       h2 {
         margin: 5px 0 20px 0;
       }
+    .left-container {
+        text-align: center;
+        
+     } 
     }
 
     .message-sent {
