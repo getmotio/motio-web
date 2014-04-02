@@ -9,10 +9,13 @@
       "description": "Let Motio be your shopping assistant: It shows you incredible things waiting for you at the store"
     },
     "explanation-3": {
-      "motio-sensor": "Motio sensor",
-      "motio-sensor-description": "A motio sensor is a wireless device which broadcasts a message that smartphones can capture.",
-      "motio-sdk": "Motio SDK",
-      "motio-sdk-description": "The motio SDK is a library developed for iOS and Android, which traduces captured sensor messages in relevant content."
+      "title-1" : "Stay in touch",
+      "description-1" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum tellus, eleifend tristique lectus eget, condimentum fermentum enim",
+      "title-2" : "In-Store experience",
+      "description-2" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum tellus, eleifend tristique lectus eget, condimentum fermentum enim",
+      "title-3" : "Exclusive discounts",
+      "description-3" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum tellus, eleifend tristique lectus eget, condimentum fermentum enim"
+
     },
     "explanation-4": {
       "contact-form-title": "Contact us | Request a demo",

@@ -210,10 +210,11 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
   &.explanation-3 {
     background: #2f3d4c;
     @include background-size(cover);
-    padding: 95px 0 40px 0;
+    padding: 95px 0 75px 0;
 
-    pre, p {
-      color: #fff;
+    pre {
+      color: #6e6e6e;
+      padding: 0px 10px;
     }
     h2{
       color: #454545;
@@ -227,20 +228,14 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
       background-color: #f29ba1;
     }
     .thumb-2{
-      background-color: #f1a679;
+      background-color: #f8c1a0;
     }
     .thumb-3{
-      background-color: #bc8fe9;
+      background-color: #cca5f2;
     }
 
-    .left-container {
-     
-      
-
-    }
-
-    .right-container {
-    
+    .caption{
+      padding-top: 0px;
     }
   }
 
