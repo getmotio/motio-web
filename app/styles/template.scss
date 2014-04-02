@@ -185,15 +185,15 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
 
   &.explanation-2 {
     background: #f5f5f5;
-    padding: 100px 0 130px 0; 
+    padding: 70px 0 70px 0; 
 
     .left-container {
       @include make-md-column(7);
-      padding-top: 60px;
+      padding-top: 0px;
       margin-left: -15px;
     }
     pre{
-      padding-top: 40px;
+      padding-top: 15px;
        }
 
     .right-container {
@@ -208,39 +208,39 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
   }
 
   &.explanation-3 {
-    background: url(/images/store.png) no-repeat center center;
+    background: #2f3d4c;
     @include background-size(cover);
     padding: 95px 0 40px 0;
 
-    h2, pre, p {
+    pre, p {
       color: #fff;
+    }
+    h2{
+      color: #454545;
+    }
+    .thumb{
+      margin: -3px -3px;
+      text-align: center;
+      padding: 5px 5px;
+    }
+    .thumb-1{
+      background-color: #f29ba1;
+    }
+    .thumb-2{
+      background-color: #f1a679;
+    }
+    .thumb-3{
+      background-color: #bc8fe9;
     }
 
     .left-container {
-      @include make-md-column(6);
-      text-align: left;
-
-      .motio-sensor {
-        float:right;
-        margin-top: 40px;
-        margin-right:135px;
-      }
+     
+      
 
     }
 
     .right-container {
-      @include make-md-column(6);
-      text-align: right;
-
-      .iphone {
-        float:left;
-        margin-left:20px;
-      }
-
-      .iphone-description {
-        position: relative;
-        top: -45px;
-      }
+    
     }
   }
 
