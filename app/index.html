@@ -38,12 +38,14 @@
       <div class="explanations explanation-1" ng-controller="Explanation1Controller">
         <div class="container">
           <div class="left-container">
-            <img src="/images/phones.png" alt="Phones" />
+            <img src="/images/motio-app.png" alt="Phones" />
           </div>
           <div class="right-container">
-            <h2 data-i18n="explanations.explanation-1.title"></h2>
-            <pre data-i18n="explanations.explanation-1.description"></pre>
-            <a href="#" class="btn-link" data-i18n="explanations.explanation-1.request-demo" ng-click="requestDemo()"></a>
+            <div class="title" data-i18n="explanations.explanation-1.title"></div>
+            <pre class="slogan" data-i18n="explanations.explanation-1.description"></pre>
+            <a class="app-store-soon" href="#">
+              <img src="/images/app-soon.png" alt="Available on App Store soon" />
+            </a>
           </div>
         </div>
       </div>
@@ -51,32 +53,50 @@
       <div class="explanations explanation-2">
         <div class="container">
           <div class="left-container">
-            <h2 data-i18n="explanations.explanation-2.title"></h2>
+            <h1 data-i18n="explanations.explanation-2.title"></h1>
             <pre data-i18n="explanations.explanation-2.description"></pre>
           </div>
           <div class="right-container">
-            <img src="/images/hangers.png" alt="Hangers and Motio" />
+            <img src="/images/local-store.png" alt="Find motio on the local stores" />
           </div>
         </div>
       </div>
 
       <div class="explanations explanation-3">
         <div class="container">
-          <div class="left-container">
-            <h2 data-i18n="explanations.explanation-3.motio-sensor">Motio sensor</h2>
-            <p data-i18n="explanations.explanation-3.motio-sensor-description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, porro ab iusto ratione perferendis ut nesciunt.
-            </p>
-            <img class="motio-sensor" src="/images/motio-sensor.png" alt="Motio device" />
-          </div>
-          <div class="right-container">
-            <img class="iphone" src="/images/iphone-flat.png" alt="Iphone" />
-            <div class="clearfix"></div>
-            <div class="iphone-description">
-              <h2 data-i18n="explanations.explanation-3.motio-sdk">Motio SDK</h2>
-              <p data-i18n="explanations.explanation-3.motio-sdk-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, explicabo, aliquam sapiente nemo dignissimos.
-              </p>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="thumb thumb-1">
+                  <img  src="/images/tshirt.png" alt="motio">
+                </div>
+                <div class="caption">
+                  <h2 data-i18n="explanations.explanation-3.title-1"></h2>
+                    <pre data-i18n="explanations.explanation-3.description-1"></pre>               
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="thumb thumb-2">
+                  <img  src="/images/motio-instore.png" alt="motio">
+                </div>
+                <div class="caption">
+                  <h2 data-i18n="explanations.explanation-3.title-2"></h2>
+                    <pre data-i18n="explanations.explanation-3.description-2"></pre>               
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="thumb thumb-3">
+                  <img  src="/images/exclusive-discounts.png" alt="motio">
+                </div>
+                <div class="caption">
+                  <h2 data-i18n="explanations.explanation-3.title-3"></h2>
+                    <pre data-i18n="explanations.explanation-3.description-3"></pre>               
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -85,6 +105,8 @@
       <div class="explanations explanation-4" ng-controller="FormController">
         <div class="container">
           <div class="left-container">
+            <img  src="/images/local-store2.png" alt="motio">
+            <h1>Be amazed with Motio!</h1>            
           </div>
           <div class="right-container">
             <h2 data-i18n="explanations.explanation-4.contact-form-title"></h2>
@@ -118,8 +140,10 @@
       </div>
 
       <div class="footer">
-        <div class="container">
-          
+        <div class="container-foot">
+          <a class="mail" href=”mailto:hello@getmotio<.com”>hello@getmotio.com</a>
+          <h5>with <span class="glyphicon glyphicon-heart"></span> from Buenos Aires</h5>
+          <h4>Copyright © 2014 Getmotio. All rights reserved. </h4>
         </div>
       </div>
     </div>

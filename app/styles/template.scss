@@ -7,7 +7,7 @@ body {
 }
 
 .full-wrapper {
-  background: url(/images/background.jpg) no-repeat center center fixed;
+  background: url(/images/store2.png) no-repeat center center fixed;
   @include background-size(cover);
 }
 
@@ -71,7 +71,7 @@ form {
 
 a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:focus, button.btn-motio {
   display: inline-block;
-  background: $orange;
+  background: #2f3d4c;
   color: #fff;
   padding: 10px 15px;
   font-size: 18px;
@@ -126,7 +126,7 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
 }
 
 .explanations {
-  padding:30px 0;
+  padding:0px 0;
 
   .left-container {
     @include make-md-column(6);
@@ -146,39 +146,61 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
       @include make-md-column(5);
       text-align: center;
 
+
       @media (max-width: $screen-md-min) {
         img {
           height: 250px;
         }
       }
     }
+   
+    
     
     .right-container {
       @include make-md-column(7);
       @media (min-width: $screen-md-min) {
-        padding-top: 90px;
+        padding-top: 40px;
+      }
+      .title{
+        font-size: 35pt;
+        line-height: 35pt;
+
       }
 
       a.btn-link {
         margin-top: 30px;
         float: right;
       }
+       .slogan{
+      padding-top: 30px;
+      text-shadow: #f57e37 5px 0px 5px;    
+    }
+     
+    img{
+      padding-top: 30px;
+    }
+
     }
   }
 
   &.explanation-2 {
     background: #f5f5f5;
-    padding: 100px 0 130px 0; 
+    padding: 70px 0 70px 0; 
 
     .left-container {
       @include make-md-column(7);
-      padding-top: 110px;
+      padding-top: 0px;
+      margin-left: -15px;
     }
+    pre{
+      padding-top: 15px;
+       }
 
     .right-container {
       @include make-md-column(5);
       text-align: center;
     }
+
 
     h2, p, pre {
       color: #555 !important;
@@ -186,44 +208,41 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
   }
 
   &.explanation-3 {
-    background: url(/images/store.png) no-repeat center center;
+    background: #2f3d4c;
     @include background-size(cover);
-    padding: 95px 0 40px 0;
+    padding: 95px 0 75px 0;
 
-    h2, pre, p {
-      color: #fff;
+    pre {
+      color: #6e6e6e;
+      padding: 0px 10px;
+    }
+    h2{
+      color: #454545;
+    }
+    .thumb{
+      margin: -3px -3px;
+      text-align: center;
+      padding: 5px 5px;
+    }
+    .thumb-1{
+      background-color: #f29ba1;
+    }
+    .thumb-2{
+      background-color: #f8c1a0;
+    }
+    .thumb-3{
+      background-color: #cca5f2;
     }
 
-    .left-container {
-      @include make-md-column(6);
-      text-align: left;
-
-      .motio-sensor {
-        float:right;
-        margin-top: 40px;
-        margin-right:135px;
-      }
-
-    }
-
-    .right-container {
-      @include make-md-column(6);
-      text-align: right;
-
-      .iphone {
-        float:left;
-        margin-left:20px;
-      }
-
-      .iphone-description {
-        position: relative;
-        top: -45px;
-      }
+    .caption{
+      padding-top: 0px;
     }
   }
 
   &.explanation-4 {
     background: #f5f5f5;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     .right-container {
       color: #555;
@@ -231,6 +250,10 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
       h2 {
         margin: 5px 0 20px 0;
       }
+    .left-container {
+        text-align: center;
+        
+     } 
     }
 
     .message-sent {
@@ -257,6 +280,16 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
 
 .footer {
   background: #f57e37;
-  height: 250px; //Demo!
+  height: 150px; 
+}
+
+.container-foot{
+  text-align: center;
+  padding-top: 30px;
+
+  a.mail{
+    font-size: 20pt;
+    color: #fff;
+  }
 }
 
