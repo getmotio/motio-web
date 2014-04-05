@@ -11,9 +11,6 @@ app.post('/contact', function (req, res) {
 
   if (req.body && req.body.name && req.body.email && req.body.comments) {
     var txtMsg = "Contact us | Request a demo\n\n";
-    if (req.body.company) {
-      txtMsg += "Company: " + req.body.company + "\n";
-    };
     txtMsg += "Email: " + req.body.email + "\n";
     txtMsg += "Comments: " + req.body.comments + "\n";
 
