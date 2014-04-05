@@ -1,31 +1,33 @@
 {
   "explanations": {
     "explanation-1": {
-      "title": "Potencie su negocio aplicando la última tecnología de localización",
-      "description": "Instale los sensores motio, y comience a brindar avisos, recomendaciones y beneficios a los usuarios de sus aplicaciones iOS y Androd mientras recorren su local.",
-      "request-demo": "¡Pida una demostración ahora!"
+      "title": "Motio es la aplicación que te va a ayudar a descubrir los mejores productos cerca tuyo",
+      "description": "Bienvenido a la experiencia In-Store de Motio"
     },
     "explanation-2": {
-      "title": "Nuestra solución",
-      "description": "Motio ayuda a retailers a apalancarse en la tecnología móvil para atraer e influir a los clientes mientras compran dentro de sus locales.\nIntegra los canales de venta brick and mortar y online en uno solo, permitiendo a las tiendas ofrecer descuentos, beneficios y contenido relevante mientras estos recorren el lugar."
+      "title": "Tenemos la experiencia de compra más moderna, como nunca antes habrás interactuado con tus marcas favoritas.",
+      "description": "Motio va a ser tu shopping assistant: Te va a mostrar todo lo que te está esperando en los locales"
     },
     "explanation-3": {
-      "motio-sensor": "Motio sensor",
-      "motio-sensor-description": "Los sensores motio son dispositivos wireless que emiten un mensaje broadcast el cual puede ser capturado por los teléfonos smartphone.",
-      "motio-sdk": "SDK Motio",
-      "motio-sdk-description": "El SDK Motio es una librería desarrollada para iOS y Android, la cual traduce mensajes capturados en contenido relevante."
+      "title-1" : "Mantenete conectado",
+      "description-1" : "Interactúa con tus marcas favoritas como nunca antes. Siempre actualizado con los últimos productos, colecciones y sobre todos los mejores descuentos",
+      "title-2" : "Experiencia In-Store",
+      "description-2" : "Preparate para comprar de una nueva manera.  Con los Motio Beacons tu experiencia dentro de los locales va a ser mucho más fácil y con más recompensas! Recibí notificaciones exclusivas en los locales: Descuentos, contenidos y puntos! ",
+      "title-3" : "Descuentos exclusivos",
+      "description-3" : "Participá de la exclusiva comunidad de Motio Fashion y comprá con exclusivos discuentos en las marcas más importantes del mercado"
+
     },
     "explanation-4": {
-      "contact-form-title": "Contáctanos | Pide una demostración",
-      "contact-sent-message": "Tu mensaje fue enviado con éxito! Nos contactaremos pronto.",
-      "fullname": "Nombre completo",
-      "email": "Correo electrónico",
-      "company": "Companía",
-      "comments": "Cuéntanos sobre tu idea",
-      "required-field": "Campo requerido",
+      "be-amazed": "Empezá a usar Motio app!",
+      "contact-form-title": "No seas tímido! | Escribinos",
+      "contact-sent-message": "Tu mensaje se envió con éxito! Te contestaremos a la brevedad.",
+      "fullname": "Tu nombre",
+      "email": "Email",
+      "comments": "En qué estabas pensando?",
+      "required-field": "obligatorios",
       "invalid-email": "Email inválido",
-      "fill-form-message": "(complete el formulario para poder enviarlo)",
-      "form-ready-message": "listo para ser enviado! ->"
+      "fill-form-message": "(Completá todo el formulario para poder enviar el mensaje)",
+      "form-ready-message": "Listo para mandarlo! ->"
     }
   }
 }
