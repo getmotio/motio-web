@@ -125,6 +125,11 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
 
 }
 
+.responsive-image{
+  max-width:100%; 
+  height:auto;
+}
+
 .explanations {
   padding:0px 0;
 
@@ -194,11 +199,13 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
     }
     pre{
       padding-top: 15px;
+      max-width: 600px;
        }
 
     .right-container {
       @include make-md-column(5);
       text-align: center;
+      
     }
 
 
@@ -218,6 +225,9 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
     }
     h2{
       color: #454545;
+    }
+    .thumbnail{
+      height: 430px;
     }
     .thumb{
       margin: -3px -3px;
