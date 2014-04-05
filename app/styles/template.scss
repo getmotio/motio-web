@@ -289,17 +289,26 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
 }
 
 .footer {
-  background: #f57e37;
-  height: 150px; 
-}
-
-.container-foot{
+  background: #f57e37; 
+  padding: 50px 0;
   text-align: center;
-  padding-top: 30px;
 
-  a.mail{
-    font-size: 20pt;
+  a.mail {
+    font-size: 25px;
     color: #fff;
+    text-decoration: none;
+  }
+
+  .love-message {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #FFEA7E;
+  }
+
+  .copyright {
+    font-size: 10px;
+    font-weight: bold;
+    color: #e7e7e7;
+    text-transform: uppercase;
   }
 }
-
