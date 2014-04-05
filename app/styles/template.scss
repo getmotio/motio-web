@@ -125,6 +125,11 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
 
 }
 
+.responsive-image{
+  max-width:100%; 
+  height:auto;
+}
+
 .explanations {
   padding:0px 0;
 
@@ -200,6 +205,7 @@ a.btn-link, a.btn-link:active, a.btn-link:focus, a.btn-link:visited, a.btn-link:
     .right-container {
       @include make-md-column(5);
       text-align: center;
+      
     }
 
 
